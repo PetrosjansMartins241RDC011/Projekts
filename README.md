@@ -1,2 +1,2 @@
 # Projekts
-Projekts par ēdiena recepšu izvēlēšanos dažādām vajadzībām.
+Projekts par recepšu izvēlēšanos dažādām vajadzībām.
