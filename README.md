@@ -3,9 +3,9 @@ Projekts par recepšu izvēlēšanos dažādām vajadzībām.
 ## Projekta uzdevums
 Projekta uzdevums ir atvieglināt ēdienu recepšu izvēli katrai cilvēku grupai, vai nu tie vēlas būt uz kaloriju deficīta, vai saglabāt savu sākotnējo svaru ēdot veselīgi, vai nu arī iegūt muskuļu masu ēdot bagātākus kaloriju ēdienus ar vairāk proteīna.
 ## Par izmantotajām bibliotēkām
-import requests
+### import requests
 Šī bibliotēka ļauj piekļūt tīmekļa lapas saturam, manā gadījumā HTML saturam. Ar šīs bibliotēkas palīdzību es spēju apstrādāt HTTP statusa kodus, piemēram, piekļūt pie headers. "requests" bibliotēka saņem šo HTML kodu un tad saglaba to html.text, kurš pēctam nogādā šo informāciju manai otrajai izmantotajai bibliotēkai "BeautifulSoup". Ja netiktu izmantota šī bibliotēka, tad mana programma nespētu ielādēt tīmekļa lapas, no kurām es iegūstu receptes.
-from bs4 import BeautifulSoup
+### from bs4 import BeautifulSoup
 Šī bibliotēka ļauj analizēt un apstrādāt HTML datus Python valodā. Ar "BeautifulSoup" palīdzību es spēju izmantot metodes .find(), .find_all(), .text, .attrs, ar kuru palīdzību var viegli izpētīt un analizēt datus. Manā kodā šī bibliotēka ir domāta, lai atrastu vairākus HTML elementus, piemēram "div", "h2", "h3", "p", zem kuriem slēpjas informācija, kura man ir vajadzīga. 
 Tātad "requests" bibliotēka iegūst HTML kodu no tīmekļa, bet "BeautifulSoup" apstrādā HTML un izvelk no tā datus. Bez "requests" bibliotēkas nebūtu iespējams piekļūt vajadzīgajām lapām, bet bez "BeautifulSoups" es nespētu apstrādāt šos HTML datus.
 ## Programmatūras izmantošanas metodes
